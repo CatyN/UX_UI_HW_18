@@ -1,0 +1,105 @@
+/*Nav Bar */
+
+.navbar{
+    background-color: #8BA5D9;
+    width: 100%;
+    height: 74px;
+    margin: 0px;
+    display: flex;
+   
+}
+.containerNavBar{
+    display: flex;
+    align-items: center;
+
+}
+.navbarHome{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 24px;
+   font-weight: 800;
+   padding-left: 140px;
+
+}
+.linksNavbar{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    align-items: center;
+}
+.navbarUx, .navbarPhoto, .navbarAbout{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    display: flex;
+    padding: 16px;
+  
+}
+/* Text*/
+.textBody{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 140PX;
+    padding-top: 200PX;
+    padding-bottom: 200px;
+    background-color: black;
+   
+}
+.subtitle{
+    font-size:40px;
+    font-weight: 200;
+    color: #8BA5D9;
+    margin: 0;
+
+}
+.leadText{
+    color:#F2F2F2 ;
+    font-size: 60px;
+    font-weight: bold;
+    width: 80%;
+
+}
+
+
+/*Card Section*/
+.projects{
+    background-color:white;
+    height: 800px;
+    display: flex;
+}
+
+.cardsProjects{
+    padding: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    height:1000px ;
+    
+}
+
+
+.natureHills, .usCourts,.camped,.restore{
+    padding: 0;
+    height:25%;
+    width: 600px;
+    transform: rotate(-90deg);
+}
+/* Hover*/
+.natureHills:hover{
+    background-color: thistle;
+}
+
+/*Text*/
+h2{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size:80px;
+}
+
+/*Body*/
+body{
+    margin: 0;
+    padding: 0;
+}
