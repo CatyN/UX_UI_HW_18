@@ -39,7 +39,7 @@
 /* Text*/
 .textBody{
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 140PX;
+    padding-left: 8%;
     padding-top: 200PX;
     padding-bottom: 200px;
     background-color: black;
@@ -62,44 +62,136 @@
 
 
 /*Card Section*/
-.projects{
-    background-color:white;
-    height: 800px;
-    display: flex;
-}
 
 .cardsProjects{
-    padding: 140px;
+    margin: 8%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    width: 100%;
-    height:1000px ;
+    height:800px; 
     
 }
 
 
 .natureHills, .usCourts,.camped,.restore{
-    padding: 0;
-    height:25%;
-    width: 600px;
-    transform: rotate(-90deg);
+   height: 100%;
+   width: 100%;
+  
 }
 /* Hover*/
+
 .natureHills:hover{
-    background-color: thistle;
+    background-image: url(./Images/Courts_Photo.png); 
+    background-repeat: no-repeat;
 }
-
+*/
 /*Text*/
-h2{
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size:80px;
-}
 
+.transformText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    width: 100%;
+    transform-origin: bottom right;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    
+
+}
+*/
 /*Body*/
 body{
     margin: 0;
     padding: 0;
 }
+
+/*MY UX SKILLS*/
+.textHeader{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 140px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-weight: 900;
+    
+}
+.box{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
+
+.uxBox,.uiBox,.webDev{
+    margin: 2%;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* Projects*/
+#projects{
+    display: grid;
+    margin: 0px 8%;
+    height: 80vh;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "imagesProjNH cardProjNH"
+    "imagesProjUS cardProjUS"
+    "imagesProjCA cardProjCA"
+    ;
+}
+
+#imagesProjNH {
+  grid-area: imagesProjNH;
+  background-image: url(./Images/Filter.png);
+}
+
+#cardProjNH {
+    grid-area: cardProjNH;
+  }
+
+#imagesProjUS {
+  grid-area: imagesProjUS;
+  background-image: url(./Images/Courts_Photo.png);
+}
+
+#cardProjUS {
+  grid-area: cardProjUS;
+  
+}
+
+#imagesProjCA{
+    grid-area: imagesProjCA;
+    background-image: url(./Images/Camped_Photo@2x.png);
+    object-fit: scale-down;
+}
+#cardProjCA{
+    grid-area: cardProjCA;
+}
+
+.button {
+    background-color: #8BA5D9; 
+    border: #F2F2F2;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8%;
+}
+
+.textProj{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8%;
+}
+
+@media only screen and (max-width: 600px) {
+    .box{
+        flex-direction: column;
+    }
+  }
